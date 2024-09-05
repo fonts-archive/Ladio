@@ -1,36 +1,28 @@
-# Ladio
+# 라디오고딕
 
-[Visit Source](http://www.earlyfont.com/portfolio/EARLYFONT_LADIO%20GO)
-
-&nbsp;
-
-### CSS
-
-```
-font-family: 'Ladio';
-```
+[배포처 바로가기](https://www.earlyfont.com/portfolio/EARLYFONT_LADIO%20GO)
 
 &nbsp;
 
-### link
+## 웹 폰트
 
-```
+사용하는 `font-family`의 이름은 `Ladio`입니다.
+
+### HTML
+
+```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fonts-archive/Ladio/Ladio.css" type="text/css"/>
 ```
 
-&nbsp;
+### CSS `@Import`
 
-### import
-
-```
+```css
 @import url('https://cdn.jsdelivr.net/gh/fonts-archive/Ladio/Ladio.css');
 ```
 
-&nbsp;
+### CSS `@font-face`
 
-### font-face
-
-```
+```css
 @font-face {
     font-family: 'Ladio';
     font-weight: normal;
@@ -45,7 +37,38 @@ font-family: 'Ladio';
 
 &nbsp;
 
-### 라이센스 본문
+## 다이나믹 서브셋
+
+웹폰트의 최적화를 위해 모던 브라우저에서는 글리프를 여러개로 나누어 필요한 부분만 동적으로 파싱하는 다이나믹 서브셋을 제공합니다. 폰트의 용량이 부담된다면 아래 코드를 사용하는 걸 추천합니다.
+
+### HTML
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fonts-archive/Ladio/subsets/Ladio-dynamic-subset.css" type="text/css"/>
+```
+
+### CSS
+
+```css
+@import url('https://cdn.jsdelivr.net/gh/fonts-archive/Ladio/subsets/Ladio-dynamic-subset.css');
+```
+
+&nbsp;
+
+## font-family
+
+어느 브라우저나 시스템 환경에서도 동일한 폰트가 적용되어야 한다면 아래와 같이 구성하는 걸 추천합니다. `-apple-system`과 `BlinkMacSystemFont`는 맥, `Segoe UI`는 윈도우, `Roboto`는 안드로이드의 기본 폰트입니다.
+
+
+```css
+font-family: "Ladio", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+```
+
+&nbsp;
+
+## 라이선스
+
+라이선스는 언제든지 변경될 수 있습니다. 변경사항을 확인하려면 배포처를 방문해 주세요.
 
 ```
 본 전용서체는 소유권 및 판권이 해당 클라이언트에 속해 있으며,
